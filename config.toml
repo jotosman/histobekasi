@@ -1,0 +1,93 @@
+# Site Settings
+baseURL = "localhost:1313"
+languageCode = "en-us"
+defaultContentLanguage = "id"
+title = "Histobekasi"
+theme = "matik"
+sectionPagesMenu = "Menu"
+
+# Enter your tracking code to enble Google Analytics
+googleAnalytics = ""
+
+[menu]
+
+
+[[menu.main]]
+  name = "Home"
+  weight = 1
+  identifier = "home"
+  url = "/"
+
+[[menu.main]]
+  name = "Timeline"
+  weight = 2
+  identifier = "timeline"
+  url = "/timeline/"
+
+[[menu.main]]
+  name = "Jelajah"
+  weight = 3
+  identifier = "jelajah"
+  url = "/jelajah/"
+
+
+[params]
+
+  name = ""
+  description = ""
+
+  custom_css  = []
+  custom_js   = []
+  favicon     = ""
+
+  [params.error404]
+    heading = "Page couldn't be found"
+    text    = "Please visit [this page](/)"
+
+  # Navigation
+  [params.navigation]
+    brand   = "HistoBekasi"
+    logo    = ""
+
+  # Hero section
+  [params.hero]
+    # To change the background imgae of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder
+    title = "Kenali Sejarah Bekasi"
+    subtitle = "Dengan kunjungi daerah bersejarah"
+    buttonText = "Kuy Jelajah"
+
+  # Services/Tentang section
+  [params.tentang]
+    enable = true
+    title = "Tentang Bekasi"
+    subtitle = "Membuat Beksi Unik dengan lainnya"
+
+    [[params.tentang.row]]
+    
+    [[params.tentang.row.list]]
+      icon = ""
+      title = "Kelebihan 1"
+      description = "Memiliki kelebihan berupa menjadi salah satu bagian yang banyak dikunjungi orang-orang."
+
+    [[params.tentang.row.list]]
+      icon = ""
+      title = "Ketangguhan"
+      description = "Memiliki kelebihan berupa menjadi salah satu bagian yang banyak dikunjungi orang-orang."
+
+    [[params.tentang.row.list]]
+      icon = ""
+      title = "Kekuatan"
+      description = "Memiliki kelebihan berupa menjadi salah satu bagian yang banyak dikunjungi orang-orang."
+
+    [[params.tentang.row.list]]
+      icon = ""
+      title = "Kekuatan"
+      description = "Memiliki kelebihan berupa menjadi salah satu bagian yang banyak dikunjungi orang-orang."
+
+    [[params.tentang.row.list]]
+      icon = ""
+      title = "Kekuatan"
+      description = "Memiliki kelebihan berupa menjadi salah satu bagian yang banyak dikunjungi orang-orang."
+
+

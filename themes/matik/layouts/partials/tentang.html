@@ -1,0 +1,24 @@
+{{ "<!-- Tentang -->" | safeHTML }}
+<section id="tentang">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>{{ with .Site.Params.tentang.title }}{{ . }}{{ end }}</h2>
+        <hr class="primary">
+      </div>
+    </div>
+    {{ range .Site.Params.tentang.row }}
+      <div class="row justify-content-md-center text-center">
+        {{ range .list }}
+        <div class="col-md-4">
+          <svg height="100" width="100">
+            <circle cx="50" cy="50" r="40" stroke-width="3" fill="orange" />
+          </svg>
+          <h4 class="tentang-heading">{{ if .url }}<a href="{{ .url | absURL }}">{{ .title | markdownify }}</a>{{ else }}{{ .title | markdownify }}{{ end }}</h4>
+          <p class="text-muted">{{ .description | markdownify }}</p>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+  </div>
+</section>

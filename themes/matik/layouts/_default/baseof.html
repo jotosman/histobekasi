@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
+
+  <body>
+    {{ block "nav" . }}{{ partial "nav.html" . }}{{ end }}
+
+    {{ block "main" . }}{{ end }}
+
+    {{ block "footer" . }}
+    {{ partial "footer.html" . }}
+    
+    {{ partial "js-init.html" . }}
+    {{ end }}
+   </body>
+</html>
