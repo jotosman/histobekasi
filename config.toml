@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Site Settings
 baseURL = "localhost:1313"
 languageCode = "en-us"
@@ -91,3 +92,9 @@ googleAnalytics = ""
       description = "Memiliki kelebihan berupa menjadi salah satu bagian yang banyak dikunjungi orang-orang."
 
 
+=======
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Histobekasi"
+theme = "matik"
+>>>>>>> acadab526481cab74ad96dc14d27df6d705b4100

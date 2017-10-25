@@ -2,6 +2,7 @@
   <div class="container">
     <div class="row">
 
+<<<<<<< HEAD
       {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 6 }}
       {{ range $paginator.Pages }}
         <div class="col-md-4 mb-4 d-flex">
@@ -29,4 +30,29 @@
 
 <div class="container">
      {{ partial "pagination.html" . }}
+=======
+      {{ $paginator := .Paginate (where .Data.Pages "Type" "Post") 6 }}
+      {{ range $paginator.Pages }}
+        <div class="col-md-4 mb-4 d-flex">
+          <a href="{{ .RelPermalink }}">
+          <img class='card-img-top'
+             src='{{ if eq .Params.Image.src "" }}http://lorempixel.com/320/160{{else}}{{ .Params.Image.src }}{{ end}}'
+             alt='{{ .Title}}'>
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a class="text-dark" href="{{ .RelPermalink}}">{{ .Title}}</a>
+            </h4>
+          </div>
+        </div>
+    
+   </div>
+ </div>
+</article>
+
+<br>
+
+<div class="container">
+  {{ partial "partination.html" . }}
+>>>>>>> acadab526481cab74ad96dc14d27df6d705b4100
 </div>
